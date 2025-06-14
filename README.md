@@ -146,6 +146,6 @@ For questions, suggestions, or business inquiries regarding **EXOMOTIVE Showroom
 - **Names** Youssef Medhat, Abdelrahman Hazem, Moustafa Mahmoud, Ammar Elbanna, Radwa Khalid
 - **Email:** joe.medhat.dev@gmail.com
 - **GitHub:** [JOE-Medhat](https://github.com/JOE-Medhat)
-- **LinkedIn:** [Your LinkedIn Profile](www.linkedin.com/in/youssef-medhat-2a1645364)
+- **LinkedIn:**(www.linkedin.com/in/youssef-medhat-2a1645364)
 
 We welcome feedback, collaborations, and contributions to improve EXOMOTIVE Showroom.
