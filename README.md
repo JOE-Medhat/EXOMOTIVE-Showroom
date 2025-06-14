@@ -7,5 +7,5 @@ The project consists of two main parts:
 
 Frontend: A modern, dark-themed interface built with HTML, CSS, and JavaScript, allowing users to browse exotic car collections, view detailed car pages, and manage user profiles effortlessly.
 
-Backend: A powerful Node.js and Express server that manages user accounts, authentication, saved cars, and dynamic car data retrieval — all centered around exotic vehicles only.
+Backend: A powerful Node.js, Express and MongoDB server that manages user accounts, authentication, saved cars, and dynamic car data retrieval — all centered around exotic vehicles only.
 This platform is designed for car collectors, enthusiasts, and anyone passionate about the world of luxury and performance automobiles.
