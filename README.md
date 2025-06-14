@@ -69,7 +69,6 @@ npm start
 
 ```
 
-![{8174C1AF-70C7-44E4-AEF7-3D7AFD2FE5A9}](https://github.com/user-attachments/assets/c2d32a9e-bb0a-4795-8d68-645a76e5d464)
 
 ![{215E81AF-494E-4B34-8E8D-2A36D4E300EB}](https://github.com/user-attachments/assets/76c524fd-c4d0-42bf-baef-23005f9cc36e)
 
