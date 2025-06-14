@@ -77,7 +77,7 @@ npm start
 
 ![{1AE761FF-1BA3-4B0A-B4D5-0E273337A5BC}](https://github.com/user-attachments/assets/c2db0c46-a36f-420a-aa80-5d612bca360f)
 
-![{92A625BF-BF4C-49EC-809C-96D0548E8AC8}](https://github.com/user-attachments/assets/4fff4b05-e516-4fa0-8061-f46765b1147e)
+![{01DD9DD0-4BD8-4279-B4B6-E0811A99A585}](https://github.com/user-attachments/assets/4705c72a-db97-4819-aea2-4964ef7b5e7c)
 
 ![{6FAFF8FE-79C5-4CF2-BEA0-CE04D57B32FC}](https://github.com/user-attachments/assets/e9157e1a-8c54-49ef-8fdb-582c4f5b51b8)
 
