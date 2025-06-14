@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0e17, #0d111a); /* Smooth dark gradient */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: transparent;
+  padding: 60px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  background: linear-gradient(135deg, #111827, #1f2937); /* Blueish gradient */
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 28px;
+}
+
+#contactForm {
+  display: grid;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Light transparent */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: #b0b0b0;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: 2px solid #e63946;
+  background: #374151;
+  transform: translateY(-2px);
+}
+
+#contactForm textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Main Button */
+#contactForm button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #e63946;
+  transform: translateY(-2px);
+}
+
+/* Back to Home Button */
+.back-home {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #e63946;
+  transform: translateY(-2px);
+}

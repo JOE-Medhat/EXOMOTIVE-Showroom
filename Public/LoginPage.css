@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/Slider/pexels-maheshwar-reddy-83083257-17192820.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 2;
+}
+
+.form-container {
+    background: #0f1320;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #ccc;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #374151;
+    background: #374151;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e63946;
+    background: #374151;
+}
+
+/* Password toggle styles (similar to UserProfile.css and SignUpPage.css) */
+.password-section {
+    position: relative;
+    width: 100%;
+}
+
+.password-section input {
+    padding-right: 2.5rem; /* Make space for the toggle icon */
+}
+
+.password-toggle-fa {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc; /* Match input text color */
+    font-size: 1em; /* Match input font size */
+    user-select: none;
+    z-index: 2;
+}
+
+.role-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.role-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #374151;
+    background: #374151;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.role-btn.active {
+    background: #e63946;
+    border-color: #e63946;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #374151;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #e63946;
+}
+
+.error-message {
+    color: #e63946;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: none;
+}
+
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.form-footer a {
+    color: #e63946;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #fff;
+}
+
+.back-link {
+    display: block;
+    margin-top: 10px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.back-link:hover {
+    color: #e63946;
+}
+
+/* Animation for error shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .role-buttons {
+        flex-direction: column;
+    }
+}

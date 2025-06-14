@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Cars</title>
+  <link rel="stylesheet" href="Models.css"/>
+</head>
+<body>
+  <section class="featured" id="featured">
+    <h2>Brands</h2>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+
+      <button class="filter-btn" data-category="Audi">
+        <img src="images\Audi\Logo\Audi Logo.png" alt="Audi" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="Bentley">
+        <img src="images\Bentley\Logo\Bentley Logo.png" alt="Bentley" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="BMW">
+        <img src="images\Bmw\Logo\BMW Logo.png" alt="BMW" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="Ferrari">
+        <img src="images\Ferrari\Logo\Ferrari Logo.png" alt="Ferrari" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="Lamborghini">
+        <img src="images\Lamborghini\Logo\lamborghini logo.png" alt="Lamborghini" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="Mercedes">
+        <img src="images\Mercedes\Logo\Mercedes Logo.png" alt="Mercedes" class="brand-icon" />
+      </button>
+      
+      <button class="filter-btn" data-category="Porsche">
+        <img src="images\Porsche\Logo\Porsche Logo.png" alt="Porsche" class="brand-icon" />
+      </button>
+
+      <button class="filter-btn" data-category="Rolls Royce">
+        <img src="images\Rolls Royce\Logo\Rolls_Royce_logo.png" alt="Rolls Royce" class="brand-icon" />
+      </button>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="car-container" id="carsGridContainer">
+      <!-- Cars will be dynamically loaded here -->
+    </div>
+    
+    <div class="back-home-wrapper">
+      <a href="HomePage.html" class="back-home">← Back to Home</a>
+    </div>
+  </section>
+
+  <script src="Models.js" defer></script>
+</body>
+</html>

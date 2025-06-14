@@ -1,0 +1,452 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    background-color: #0f1320 !important;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Sidebar Styles */
+.profile-navbar {
+    background: #161c2d;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: auto;
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-header {
+    display: none;
+}
+
+.profile-role {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.nav-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.nav-btn i {
+    width: 20px;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    background-color: #1a2235;
+    color: #e63946;
+}
+
+.nav-btn.active {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Content Styles */
+.profile-content {
+    max-width: 1600px;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.personal-info-section,
+.account-settings-section,
+.saved-cars-section,
+.messages-section {
+    background: #161c2d;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.messages-section:last-child {
+    margin-bottom: 0;
+}
+
+.profile-section {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.profile-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-section h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Form Styles */
+.profile-form {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.password-form {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: #ccc;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    background: #1a2235;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.5), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.password-section {
+    position: relative;
+    width: 1000px !important;
+    max-width: 1200px !important;
+    display: block;
+}
+.password-form input{
+    background-color: #2b344a;
+}
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #e63946;
+}
+
+.save-btn {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #dc2f3c;
+    transform: translateY(-2px);
+}
+
+/* Saved Cars Grid */
+.saved-cars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.car-card {
+    flex: 0 0 calc(25% - 1.125rem);
+    min-width: 280px;
+    background: #2b344a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(230, 57, 70, 0.4);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-card-content {
+    padding: 1rem;
+}
+
+.car-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.car-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.car-card .price {
+    color: #e63946;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Messages List */
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.message-card {
+    background: #2b344a;
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+.message-card h4 {
+    color: #fff;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.message-card p {
+    color: #ccc;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.message-card small {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: #161c2d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    color: #fff;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: #2ecc71;
+    color: white;
+}
+
+.notification.error {
+    background: #e63946;
+    color: white;
+}
+
+.notification.info {
+    background: #3498db;
+    color: white;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    color: #ccc;
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    color: #e63946;
+    padding: 1rem;
+    background: rgba(230, 57, 70, 0.1);
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Loading States */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+    .profile-navbar {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .saved-cars-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .notification {
+        left: 20px;
+        right: 20px;
+        transform: translateY(-120%);
+    }
+
+    .notification.show {
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f1320;
+    }
+
+    .profile-navbar,
+    .message-card {
+        background: #2b344a;
+        color: #fff;
+    }
+
+    .car-card {
+        background: #2b344a;
+    }
+
+    .personal-info-section,
+    .account-settings-section,
+    .saved-cars-section,
+    .messages-section {
+        background: #161c2d;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        background: #1a2235;
+        border-color: #4d4d4d;
+        color: #fff;
+    }
+
+    .form-group label {
+        color: #ccc;
+    }
+
+    .nav-btn {
+        color: #ccc;
+    }
+
+    .nav-btn:hover {
+        background-color: #1a2235;
+    }
+
+    .no-data {
+        color: #999;
+    }
+} 

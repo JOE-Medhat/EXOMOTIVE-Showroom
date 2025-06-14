@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="AdminDashboard.css">
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 id="welcomeAdminHeader">Welcome, Admin</h1>
+    <button class="hamburger-menu" id="hamburgerMenu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav id="mainNav" class="hidden">
+      <ul>
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="#dashboard" class="active">Dashboard Overview</a></li>
+        <li><a href="#admins">Admin Management</a></li>
+        <li><a href="#users">User Management</a></li>
+        <li><a href="#inventory">Car Inventory</a></li>
+        <li><a href="#messages">Messages</a></li>
+        <li class="logout"><a href="HomePage.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main class="main">
+      <!-- Overview Cards -->
+      <section id="dashboard" class="cards">
+        <div class="card"><h3>Total Admins</h3><p id="card-admins">0</p></div>
+        <div class="card"><h3>Total Users</h3><p id="card-users">0</p></div>
+        <div class="card"><h3>Cars Listed</h3><p id="card-cars">0</p></div>
+        <div class="card"><h3>New Messages</h3><p id="card-messages">0</p></div>
+      </section>
+
+      <!-- Admin Management Section -->
+      <section id="admins" style="display: none;">
+        <h2>Admin Management</h2>
+        <div class="form-box" id="addAdminForm">
+          <h2>Add New Admin</h2>
+          <div class="form-group"><label for="newAdminName">Name</label><input type="text" id="newAdminName" placeholder="Admin Name"></div>
+          <div class="form-group"><label for="newAdminEmail">Email</label><input type="email" id="newAdminEmail" placeholder="Admin Email"></div>
+          <div class="form-group">
+            <label for="newAdminPassword">Password</label>
+            <div class="password-section">
+              <input type="password" id="newAdminPassword" placeholder="Password" required>
+              <span class="password-toggle-fa fa fa-eye-slash" data-target="newAdminPassword"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="newAdminConfirmPassword">Confirm Password</label>
+            <div class="password-section">
+              <input type="password" id="newAdminConfirmPassword" placeholder="Confirm Password" required>
+              <span class="password-toggle-fa fa fa-eye-slash" data-target="newAdminConfirmPassword"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="newAdminRole">Role</label>
+            <select id="newAdminRole">
+              <option value="admin">Admin</option>
+              <option value="super_admin">Super Admin</option>
+            </select>
+          </div>
+          <div class="form-group"><button id="addAdminBtn">Add Admin</button></div>
+        </div>
+        <div class="table-container">
+          <table id="adminsTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Admin data will be loaded here -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <!-- User Management -->
+      <section id="users">
+        <h2>User Management</h2>
+        <div class="table-container">
+          <table id="usersTable">
+            <thead>
+              <tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <!-- User rows will be loaded dynamically by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>      
+
+      <!-- Car Inventory with Add Form -->
+      <section id="inventory" style="display: none;">
+        <h2>Car Inventory</h2>
+        <div class="form-box" id="addCarForm">
+          <h2>Add New Car</h2>
+          <div class="form-group"><label for="newMake">Brand</label><input type="text" id="newMake" placeholder="Brand e.g. BMW"></div>
+          <div class="form-group"><label for="newModel">Model</label><input type="text" id="newModel" placeholder="Model e.g. Albina XB7"></div>
+          <div class="form-group"><label for="newYear">Year</label><input type="number" id="newYear" placeholder="Year e.g. 2026"></div>
+          <div class="form-group"><label for="newEngine">Engine</label><input type="text" id="newEngine" placeholder="Engine type e.g. V8"></div>
+          <div class="form-group"><label for="newHorsepower">Horsepower</label><input type="number" id="newHorsepower" placeholder="HP e.g. 500"></div>
+          <div class="form-group"><label for="newTorque">Torque</label><input type="number" id="newTorque" placeholder="Torque e.g. 650"></div>
+          <div class="form-group"><label for="newPrice">Price (EGP)</label><input type="text" id="newPrice" placeholder="Price e.g. 10000000"></div>
+          <div class="form-group">
+            <label for="newStatus">Status</label>
+            <select id="newStatus">
+              <option value="Available">Available</option>
+              <option value="Sold">Sold</option>
+            </select>
+          </div>
+          <div class="form-group"><button id="addCarBtn">Add Car</button></div>
+        </div>
+        <table id="carsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Engine</th>
+              <th>HP</th>
+              <th>Torque</th>
+              <th>Price (EGP)</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Car rows will be loaded dynamically by JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Messages -->
+      <section id="messages">
+        <h2>Messages</h2>
+        <table id="messagesTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>From</th>
+              <th>Subject</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Message rows will be loaded dynamically by JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+
+  <script src="AdminDashboard.js"></script>
+</body>
+</html> 

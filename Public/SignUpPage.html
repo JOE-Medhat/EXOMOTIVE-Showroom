@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Exomotive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SignUpPage.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Create Account</h1>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-section">
+                        <input type="password" id="password" name="password" required>
+                        <span class="password-toggle-fa fa fa-eye-slash" data-target="password"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-section">
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <span class="password-toggle-fa fa fa-eye-slash" data-target="confirmPassword"></span>
+                    </div>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            <div class="form-footer">
+                <p>Already have an account? <a href="LogInPage.html">Log In</a></p>
+                <a href="HomePage.html" class="back-link">Back to Homepage</a>
+            </div>
+        </div>
+    </div>
+    <script src="SignUpPage.js"></script>
+</body>
+</html>

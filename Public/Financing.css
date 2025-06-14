@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0a0e17, #0d111a); /* Same dark gradient */
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Loan Calculator */
+.loan-calculator-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: transparent; /* Keep gradient visible */
+}
+
+.loan-calculator {
+  background: linear-gradient(135deg, #111827, #1f2937); /* Blueish gradient */
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.loan-calculator h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+}
+
+.loan-calculator form {
+  display: grid;
+  gap: 20px;
+}
+
+.loan-calculator input {
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Light transparent */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loan-calculator input::placeholder {
+  color: #b0b0b0;
+}
+
+.loan-calculator input:focus {
+  
+  outline: 2px solid #e63946;
+  background: #374151;
+  transform: translateY(-2px);
+}
+
+/* Calculate Button */
+.calculate-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calculate-btn:hover {
+  background-color: #e63946;
+  transform: translateY(-2px);
+}
+
+/* Result Display */
+#calculationResult {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #e63946;
+  min-height: 24px;
+}
+
+/* Back to Home Button */
+.back-home {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #e63946;
+  transform: translateY(-2px);
+}
