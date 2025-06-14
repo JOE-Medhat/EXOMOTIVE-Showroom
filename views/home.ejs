@@ -1,0 +1,61 @@
+<%- contentFor('body') %>
+
+<div class="hero-section">
+    <h1>Welcome to Car Dealership</h1>
+    <p>Discover our collection of luxury and performance vehicles</p>
+    <a href="/models" class="cta-button">View Models</a>
+</div>
+
+<div class="featured-cars">
+    <h2>Featured Models</h2>
+    <div class="car-grid">
+        <% featuredCars.forEach(car => { %>
+            <div class="car-card">
+                <img src="<%= car.images[0] %>" alt="<%= car.brand %> <%= car.model %>">
+                <div class="car-info">
+                    <h3><%= car.brand %> <%= car.model %></h3>
+                    <p><%= car.year %></p>
+                    <p class="price"><%= car.price.toLocaleString() %> EGP</p>
+                    <a href="/car/<%= car._id %>" class="view-details">View Details</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- contentFor('style') %>
+<style>
+    .hero-section {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/hero-bg.jpg');
+        background-size: cover;
+        color: white;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #e63946;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #dc2f3c;
+    }
+
+    .featured-cars {
+        padding: 4rem 2rem;
+    }
+
+    .car-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+</style> 
