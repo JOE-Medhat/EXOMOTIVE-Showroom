@@ -144,8 +144,8 @@ npm start
 For questions, suggestions, or business inquiries regarding **EXOMOTIVE Showroom**, feel free to reach out:
 
 - **Names** Youssef Medhat, Abdelrahman Hazem, Moustafa Mahmoud, Ammar Elbanna, Radwa Khalid
-- **Email:** joe.medhat.dev@gmail.com
-- **GitHub:** [JOE-Medhat](https://github.com/JOE-Medhat)
+- **Email:** jo3medhat@gmail.com, abdelrahman2305767@miuegypt.edu.eg, moustafa2302959@miuegypt.edu.eg, ammar2305065@miuegypt.edu.eg, Radwa2303904@miuegypt.edu.eg
+- **GitHub:** [JOE-Medhat](https://github.com/JOE-Medhat), [AbdelrahmanHazem10](https://github.com/AbdelrahmanHazem10), [moustafa75](https://github.com/moustafa75), [Albanna1](https://github.com/Albanna1), [RADWAQNSUA](https://github.com/RADWAQNSUA)
 - **LinkedIn:**(www.linkedin.com/in/youssef-medhat-2a1645364)
 
-We welcome feedback, collaborations, and contributions to improve EXOMOTIVE Showroom.
+We welcome feedback and contributions to improve EXOMOTIVE Showroom.
