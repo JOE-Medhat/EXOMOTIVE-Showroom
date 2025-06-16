@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: exomotive-showroom
-    env: node
-    plan: free
-    buildCommand: npm install
-    startCommand: node app.js
